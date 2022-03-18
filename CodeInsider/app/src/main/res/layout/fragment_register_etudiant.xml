@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment.FragmentRegisterEtudiant">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_code_insider_blanc" />
+
+    <ImageView
+        android:id="@+id/textCode"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/text_code_insider_blanc" />
+
+    <ScrollView
+        android:id="@+id/Formulaire"
+        android:layout_marginStart="50dp"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textCode">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/RegisterFirstNameEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_profile"
+                android:ems="13"
+                android:hint=" Votre prénom"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterNameEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditFirstNameS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_profile_outline"
+                android:ems="13"
+                android:hint=" Votre nom"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterBirthdayEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditNameS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_cake"
+                android:ems="13"
+                android:hint=" Votre date de naissance"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterLocalizationEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditBirthdayS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_adresse"
+                android:ems="13"
+                android:hint=" Votre Adresse"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterPhoneNumberEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditAdressS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_phone"
+                android:ems="13"
+                android:hint="Numéro de téléphone"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterCuriculumYearEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditPhoneNumberS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_domain"
+                android:ems="13"
+                android:hint=" Année d'étude"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterRequestedRemunerationEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditCuriculumYear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_payment"
+                android:ems="13"
+                android:hint=" Rémunération demandée"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterContractTypeEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditRequestedRemuneration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_portrait"
+                android:ems="13"
+                android:hint=" Type du contrat"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterContractTimeEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditContractType"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_calendar_month"
+                android:ems="13"
+                android:hint=" Durée du contrat"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterEmailEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditContractTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="13"
+                android:hint=" Email"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterPasswordEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditEmailS"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_lock"
+                android:ems="13"
+                android:hint=" Mot De Passe"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterSkillsEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@+id/EditPassword"
+                android:layout_centerHorizontal="true"
+                android:gravity="top|center"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableTop="@drawable/ic_lightbulb"
+                android:ems="13"
+                android:hint=" Compétences"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RegisterButtonEtudiant"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Formulaire"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:elevation="10dp"
+        android:text="S'inscrire"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterButtonEtudiant"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="10dp"
+        android:text="Vous avez déja un compte ?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/RegisterTextEtudiant"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/RegisterButtonEtudiant"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Se connecter"
+        android:textColor="@color/cyan"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

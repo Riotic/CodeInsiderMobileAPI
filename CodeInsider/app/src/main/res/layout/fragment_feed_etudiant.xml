@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment.FragmentFeedEtudiant">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerViewEtudiant"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchViewStudentFeedEtudiant"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_search_bar"
+        app:queryBackground="@android:color/transparent"
+        app:closeIcon="@drawable/ic_cross"
+        app:iconifiedByDefault="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/FeedFilterEtudiant"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_baseline_filter_alt_24"
+        android:background="@drawable/custom_button"
+        app:layout_constraintStart_toEndOf="@+id/SearchViewStudentFeedEtudiant"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

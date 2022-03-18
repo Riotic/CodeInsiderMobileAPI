@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment.FragmentRegisterEntreprise">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_code_insider_blanc" />
+
+    <ImageView
+        android:id="@+id/textCode"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/text_code_insider_blanc" />
+
+    <ScrollView
+        android:id="@+id/Formulaire"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textCode"
+        android:layout_marginStart="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/RegisterNameEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_account_balance"
+                android:ems="13"
+                android:hint=" Nom de l'entreprise"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterLocalizationEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisterNameEntreprise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_adresse"
+                android:ems="13"
+                android:hint=" Adresse"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterPhoneNumberEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisterLocalizationEntreprise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_phone"
+                android:ems="13"
+                android:hint="Numéro de téléphone"
+                android:inputType="number"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterEmailEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisterPhoneNumberEntreprise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_email"
+                android:ems="13"
+                android:hint=" Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterPasswordEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RegisterEmailEntreprise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableLeft="@drawable/ic_lock"
+                android:ems="13"
+                android:hint=" Mot De Passe"
+                android:inputType="textPassword"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/RegisterDescriptionEntreprise"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/EditPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/light_white"
+                android:drawableTop="@drawable/ic_assignment"
+                android:ems="13"
+                android:hint=" Description de l'entreprise"
+                android:minHeight="48dp"
+                android:textColorHint="@color/light_white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RegisterButtonEntreprise"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Formulaire"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:elevation="10dp"
+        android:text="S'inscrire"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterButtonEntreprise"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:text="Vous avez déja un compte ?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/RegisterTextEnteprise"
+        android:layout_width="120dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/RegisterButtonEntreprise"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Se connecter"
+        android:textColor="@color/cyan"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

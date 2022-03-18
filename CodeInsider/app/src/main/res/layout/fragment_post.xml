@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Fragment.FragmentPost">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="411dp"
+        android:layout_height="228dp"
+        android:background="@drawable/blocbase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/PostJobName"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="5dp"
+            android:paddingStart="20dp"
+            android:text="Jobtitle"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/PostJobType"
+            android:layout_width="136dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/PostJobName"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingRight="5dp"
+            android:text="contractType"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/PostCompanyName"
+            android:paddingStart="20dp"
+            android:layout_width="234dp"
+            android:layout_height="29dp"
+            android:layout_below="@+id/PostJobName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="179dp"
+            android:paddingLeft="5dp"
+            android:text="Company Name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/PostHeartbtn"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/PostJobType"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="-45dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@+id/PostJobType"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_like_outline_red"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/PostCompanyAdress"
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/PostCompanyName"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="92dp"
+            android:paddingLeft="5dp"
+            android:text="CompanyAdress"
+
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/PostCompanyPhone"
+            android:layout_width="wrap_content"
+            android:paddingStart="20dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/PostCompanyName"
+            android:layout_marginTop="57dp"
+            android:paddingLeft="5dp"
+            android:text="Company Phone Number"
+
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/PostEditBtn"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/PostJobType"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="-45dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@+id/PostJobType"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_edit_pen_blue"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/PostDeleteBtn"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/PostHeartbtn"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="6dp"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_delete"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/DescLayout"
+        android:layout_width="353dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="461dp"
+        android:background="@drawable/blocbase2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688">
+
+        <TextView
+            android:id="@+id/PostDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="DescriptionPost"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

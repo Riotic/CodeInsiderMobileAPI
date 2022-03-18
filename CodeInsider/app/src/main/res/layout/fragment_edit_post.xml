@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FragmentEditPost">
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:drawableEnd="@drawable/ic_add"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Modifier un poste"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/EditPostName"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="10dp"
+        android:shadowColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="100"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint=" Nom du poste"
+        app:layout_constraintBottom_toTopOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/EditContractType"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="65dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Type du contrat" />
+
+    <EditText
+        android:id="@+id/EditPostDescription"
+        android:layout_width="275dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="65dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="start"
+        android:hint=" Description du poste..."
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ButtonEditPost"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="65dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Confirmé"
+        android:textColor="@color/black"
+        android:textColorHint="#703B3B"
+        app:cornerRadius="10dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="35dp"
+    android:padding="5dp"
+    android:elevation="8dp"
+    android:id="@+id/etudiant_card_container"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/AccountIcon"
+            android:layout_width="45dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:background="@color/white"
+            card_view:srcCompat="@drawable/ic_profile_blue"/>
+
+        <TextView
+            android:id="@+id/StudentCardName"
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+            android:padding="8dp"
+            android:text="Name"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/StudentCardSkill"
+            android:layout_width="171dp"
+            android:layout_height="49dp"
+            android:layout_gravity="bottom"
+            android:text="Skills"
+            android:fontFamily="@font/roboto_light"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:translationX="-170dp" />
+
+
+
+        <TextView
+            android:id="@+id/StudentCardContractType"
+            android:layout_width="122dp"
+            android:layout_height="34dp"
+            android:text="ContractType"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:translationX="-168dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:translationX="-168dp"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            card_view:srcCompat="@drawable/ic_mail" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
